@@ -1,0 +1,120 @@
+[
+    {
+        "period": "2018-01",
+        "topics": [
+            {
+                "name": "Trump Rally",
+                "attention": 1284,
+                "likes": 1293,
+                "dislikes": 9,
+                "keywords": [
+                    "Trump", "America", "This",
+                    "That", "Other", "No", "Yes",
+                    "Anger", "Sadness", "Emotion"
+                ],
+                "sample": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+                    "At vero eos et accusamus et iusto odio dignissimos",
+                    "NO!!"
+                ],
+                "users": [
+                    "trump", "quaquity", "auronplay", "biden", "lol"
+                ],
+                "sentiment": -0.29,
+                "liwc_sentiment": {
+                    "anger": 21.18,
+                    "posemo": 18.28,
+                    "negemo": 13.14,
+                    "money": 10.48
+                }
+            },
+            {
+                "name": "Topic 2",
+                "attention": 634,
+                "likes": 636,
+                "dislikes": 2,
+                "keywords": [
+                    "Trump", "America", "This",
+                    "That", "Other", "No", "Yes",
+                    "Anger", "Sadness", "Emotion"
+                ],
+                "sample": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+                    "At vero eos et accusamus et iusto odio dignissimos",
+                    "NO!!"
+                ],
+                "users": [
+                    "trump", "quaquity", "auronplay", "biden", "lol"
+                ],
+                "sentiment": -0.39,
+                "liwc_sentiment": {
+                    "anger": 25.18,
+                    "posemo": 11.28,
+                    "negemo": 10.14,
+                    "money": 5.48
+                }
+            }
+        ] 
+    },
+    {
+        "period": "2018-02",
+        "topics": [
+            {
+                "name": "Activist Detained and Tortured",
+                "attention": 2481,
+                "likes": 2490,
+                "dislikes": 11,
+                "keywords": [
+                    "Trump", "America", "This",
+                    "That", "Other", "No", "Yes",
+                    "Anger", "Sadness", "Emotion"
+                ],
+                "sample": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+                    "At vero eos et accusamus et iusto odio dignissimos",
+                    "NO!!"
+                ],
+                "users": [
+                    "trump", "quaquity", "auronplay", "biden", "lol"
+                ],
+                "sentiment": 0.39,
+                "liwc_sentiment": {
+                    "anger": 40.18,
+                    "posemo": 18.28,
+                    "negemo": 13.14,
+                    "money": 10.48
+                }
+            },
+            {
+                "name": "Topic 4",
+                "attention": 238,
+                "likes": 400,
+                "dislikes": 162,
+                "keywords": [
+                    "Trump", "America", "This",
+                    "That", "Other", "No", "Yes",
+                    "Anger", "Sadness", "Emotion"
+                ],
+                "sample": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis",
+                    "At vero eos et accusamus et iusto odio dignissimos",
+                    "NO!!"
+                ],
+                "users": [
+                    "trump", "quaquity", "auronplay", "biden", "lol"
+                ],
+                "sentiment": 0.09,
+                "liwc_sentiment": {
+                    "anger": 8.18,
+                    "posemo": 3.28,
+                    "negemo": 1.14,
+                    "money": 0.48
+                }
+            }
+        ] 
+    }
+]
