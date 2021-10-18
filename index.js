@@ -662,7 +662,7 @@ data = [
         "period": "2018-12",
         "topics": [
             {
-                "name": "Trump Rally",
+                "name": "Other Topic",
                 "attention": 2481,
                 "likes": 2490,
                 "dislikes": 11,
@@ -1376,4 +1376,3 @@ Highcharts.chart('container', {
         console.log($(this).attr("y"));
     })
   }, 3000);
-
