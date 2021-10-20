@@ -117,6 +117,32 @@ let raw_data = [{"created_at_month":"2017-05","topic_title":"Seth Rich","users":
 {"created_at_month":"2018-05","topic_title":"How many FAKE NAZI's are on GAB?","users":["NietzscheWolf89","InfantryVet","HappilyEverAutumn","starphibian","brutuslaurentius"],"number_of_messages":127,"likes_total":667,"average_likes":5.251968503937008,"dislike_total":58,"average_dislike":0.4566929133858268,"score_total":609,"average_score":4.7952755905511815,"avg_vader_sentiment":-0.1783354337085185,"liwc_sentiment_map":{"negative_emotions":4.7152112739186895,"positive_emotions":4.340289873057517,"anger":3.5480851207641844,"sad":1.6562500223517418,"money":3.103000033646822,"health":3.708461534518462,"social":10.024473721520943,"anxiety":1.8716666748126347,"humans":null,"family":1.3662499953061342,"friends":null,"focusfuture":3.1821874948218465,"focuspast":4.455000005386494,"focuspresent":11.32495653214662,"work":3.2647619261628105,"drives":6.386881753962527,"discrepancies":3.968979604390203,"time":4.164745801586216,"leisure":2.6364705711603165,"death":2.5118181989951567,"religion":2.7556250067427754},"word_count":{"country":5,"perspicacious":3,"defending":4,"nazi's":3,"yeah":4,"good":3,"america":4,"whites":4,"nazi":17,"post":4,"white":15,"talk":5,"hate":8,"mute":5,"real":9,"nazis":10,"person":7,"actions":4,"dont":6,"care":5,"fuck":4,"gab":14,"jewish":7,"despicable":6,"trolls":5,"point":6,"hitler":9,"eat":4,"george":7,"national":8,"hard":3,"socialist":6,"nigger":7,"jews":11,"black":6,"socialism":8,"people":18,"nice":4,"religion":3,"wrong":4,"soros":8,"shit":4,"speech":5,"calling":4,"paid":3,"fake":9,"racist":4,"time":7,"thing":3,"stuff":5},"messages_sample":["A white person calling himself a Nazi is like a black person calling himself a nigger.\\u00a0 \\u00a0Really.\\u00a0 \\u00a0The very word \\\"Nazi\\\" was never used by the German National Socialists to refer to themselves -- it was used as a pejorative by their enemies to dehumanize them, to make it easier for other men to fire bomb Dresden.\\u00a0 That's the whole point of dehumanizing language.\\r\\n\\r\\nI don't know about you, but I don't call black people niggers, and I wince at black people doing it to themselves.\\r\\n\\r\\nI see the point -- black people are trying to \\\"own\\\" the word and take away its dehumanizing sting.\\u00a0 I am dubious of how successful that is.\\u00a0 And people who call themselves Nazis are trying to do much the same -- trying to own the word and take away its sting.\\r\\n\\r\\nBut that doesn't change the fact it is a dehumanizing word used as a weapon to equate any white person who has the audacity to want what Japanese, Jews, Ethiopians, etc have (i.e. a country for themselves) with someone who would literally gas a 4 year old girl with fiendish glee.\\u00a0 \\u00a0Because, you see, if someone is a \\\"Nazi\\\" -- it is okay to hurt them, to destroy them, and to KILL them.\\u00a0 \\u00a0\\r\\n\\r\\nThere is nothing wrong with a white person in America wanting for white people what a Jew in Israel wants for Jews.\\u00a0 \\u00a0Nothing.\\u00a0 \\u00a0And no dehumanizing words should be applied, even if they apply them themselves.","I complained BEFORE about the impotent Aspie geeks PRETENDING to be NAZI's.\\u00a0 Now that DOUGLASS! got exposed for being all of that and a Momma's boy at 29, I'm mostly LAUGHING and asking how many OTHER Aspie FAKE NAZI's there are on GAB.\\n\\r\\nThe FAKE NAZI DOUGLASS was outed by another NAZI faction leader.\\n\\r\\nWhy blame the Jews for laughing at this stupidity?","Well, what with the millions of Arbas, Turks and Africans invading Europe and the millions of Mexicans invading America, all groups causing massive crime, anti white violence, and other damage, doesnt seem we're much in a different spot does it?\\n\\r\\nJews can have Israel. I want Europa. Is that so hard to grasp?","Marxist deconstructionism on full display right here.\\n\\r\\nThey'll be saying \\\"there's no such thing as a white person\\\" not too long from now","Is this the best obese boomer rage you can muster?\\n\\r\\nSeeing opiate addicts go down hard really tugs at your feels doesnt it? You refuse to learn from it though dont you? So you eat more McDonalds, pop more Xanax pills and throw around FAKE Nazi hatred at any opponent, you try THIS misguided attack on the mentally disabled and people who want their homelands back","Well that's the difference between our country that has been here for 243 years & has a Constitution that grants freedom of speech, religion, gun rights equal treatment for citizens, etc. AND Israel which has only been around for 70 years, was created to be home solely for Jews & is surrounded by enemies that outnumber them 40 to 1.\\u00a0 We're just better than Israel","I use white person to refer to people of European ancestry .\\u00a0 That is, homo sapiens var caucasoid var europid .\\u00a0\\n\\r\\nI've run my DNA thank you very much and I am far from disappointed .\\u00a0\\u00a0\\n\\r\\nMy family has put it's blood and sweat into the soil of this continent for 400 years and my DNA is wholly northern and Western European .\\u00a0\\n\\r\\nBut look, these things have a margin of error so let me define it for you more easily.\\n\\r\\nAnyone excluded by affirmative action for being white, anyone who is accused of white privilege, anyone who is tarred with the brush of Nazi for opposing immigration etc . I don't really give a damn if some test says they are 3% native American . Mkay?","Look I can see you a mile away that you are a paid internet troll. You're claiming to be a Repub that is a White supremacist, but you speak very little about George Soros . Repubs don't like Hitler. But you are trying to tarnish the name of the Republican's party by claiming to represent us and while at the same time honoring Hitler.\\n\\n\\u00a0\\u00a0https:\\/\\/youtu.be\\/HEWz8de4daM","@Perspicacious\\u200d the plural is \\\"Nazis\\\" without the apostrophe, but this level of highly advanced basic grammar is beyond your limited comprehension.","The Bible does mention antichrists Plural but different from The Antichrist","k. I'll do it just for the synogogue of Satan lovin' boomers...","A Libtard who genuflects Obama as 2nd Coming of Christ... a sycophant.","But that every one of us is despicable to someone doesn't mean we can't still be despicable to each other, does it?","The secret to GAB happiness is having a robust mute list. This is your time and you have every right to expect the people you interact with to be civil. And happily, the vast majority of GABbers are good, smart people. Why waste time with ill behaved twits?\\u00a0\\n\\r\\nFree speech means you get to speak. It doesn\\u2019t mean you\\u2019re entitled to an audience.","It's 20% Arab and also Druze and Bedouin and many Africans with Jewish ties & heritage are there too. I realise you want Jews treated differently and wrongfully but I'm afraid that's 2 bad. And you can go to hell.","I dislike all totalitarians and socialists.  Thank you Gab for MUTE !\\nI wish all socialists would self identify:  if you're a communist or national socialist don't hide.","\\\"This black woman is not a fanatic anti-Nazi, fuck her!\\\"\\n\\r\\nGod damn, you're such a colossal faggot, holy shit...","I just looked up the word \\\"Nazi\\\" again just to be sure, and nope, nothing there about having sex with children. Nice try though.","I never said people who complain about Nazis shouldn't be on Gab or are somehow \\\"ruining\\\" the site. I only said I would mute them, faggot. Nice try though.","1. They are not the same.\\n\\r\\n2. Don't try to use my disdain for the Left to sway me; everything I'm saying applies to the Left too.\\n\\r\\n3. \\\"But\\\"? What do you mean \\\"Of course they have the right to be here, BUT\\\"? What does your opinion that they are \\\"despicable\\\" have to do with their right to speak? \\ud83e\\udd14\\n\\r\\n4. As I said, everyone here is \\\"despicable\\\" to someone. And \\\"hateful\\\"."],"row_num":9}
 ]
 
+let liwc_meaning = {
+    social: "Speech contains social concerns",
+    anger: "Speech contains anger",
+    sad: "Speech contains sadness",
+    time: "Speech refering to time itself"
+}
+
+let real_world = {
+    'Seth Rich': [
+        'https://www.washingtonpost.com/news/the-fix/wp/2017/05/20/the-seth-rich-conspiracy-shows-how-fake-news-still-works/',
+        'https://www.wired.com/2017/05/seth-rich-filter-bubble/'
+    ]
+}
+
+function domain_from_url(url) {
+    var result
+    var match
+    if (match = url.match(/^(?:https?:\/\/)?(?:[^@\n]+@)?(?:www\.)?([^:\/\n\?\=]+)/im)) {
+        result = match[1]
+        if (match = result.match(/^[^\.]+\.(.+\..+)$/)) {
+            result = match[1]
+        }
+    }
+    return result
+}
+
 data = raw_data.reduce((topics, topic) => {
     let currentPeriod = topics.find((t) => {
         if (t.period == topic.created_at_month) return true;
@@ -207,7 +233,7 @@ Highcharts.chart('container', {
     yAxis: {
       min: 0,
       title: {
-        text: 'Topic Score (likes - dislikes)'
+        text: 'Topics Score (number of likes - dislikes)'
       }
     },
     tooltip: {
@@ -248,7 +274,7 @@ Highcharts.chart('container', {
                     liwc_sentiment = liwc_sentiment.filter((s) => !['focuspresent', 'focuspast', 'focusfuture'].includes(s[0]));
                     let vaderSentiment = topicMetadata.avg_vader_sentiment;
                     let sentimentIcon = vaderSentiment < 0.20 ? 'sentiment_very_dissatisfied' : (vaderSentiment > 0.20) ? 'sentiment_satisfied_alt' : 'sentiment_neutral';
-                    let sentimentText = vaderSentiment < 0.20 ? 'Overall Negative' : (vaderSentiment > 0.20) ? 'Overall Positive' : 'Overall Neutral';
+                    let sentimentText = vaderSentiment < 0.20 ? 'Overall negative' : (vaderSentiment > 0.20) ? 'Overall positive' : 'Overall neutral';
                     $('.topic-container').append(
                         `
                             <div class="topic-detail animate__animated animate__fadeIn animate__faster">
@@ -263,6 +289,16 @@ Highcharts.chart('container', {
                                 </div>
                                     <div class="topic-content">
                                         <div class="topic-sentiments">
+
+                                            <div class="likes animate__animated animate__fadeIn animate__faster" style="animation-delay: 0.2s;">    
+                                                <span class="material-icons">
+                                                    chat
+                                                </span>
+                                                <span class="n-likes">
+                                                    ${topicMetadata.number_of_messages}
+                                                </span>
+                                            </div>
+
                                             <div class="likes animate__animated animate__fadeIn animate__faster" style="animation-delay: 0.1s;">  
                                                 <span class="material-icons">
                                                     thumb_up_off_alt
@@ -280,7 +316,7 @@ Highcharts.chart('container', {
                                                 </span>
                                             </div>
 
-                                            <span style="font-size:11px; margin-top: 8px; font-weight:normal; color: white; animation-delay: 0.2s;" class="animate__animated animate__fadeIn animate__faster"> 
+                                            <span style="display: flex;justify-content: center;font-size:11px; margin-top: 8px; font-weight:normal; color: white; animation-delay: 0.2s;" class="animate__animated animate__fadeIn animate__faster"> 
                                                 ${sentimentText} sentiments
                                             </span>
                                             <div class="likes flex-col animate__animated animate__fadeIn animate__faster" style="animation-delay: 0.3s;">   
@@ -296,16 +332,26 @@ Highcharts.chart('container', {
                                                     </span>                                                
                                                 </div>
 
+                                                <span style="font-size:11px; margin-bottom: 8px; margin-top: 8px; font-weight:normal; color: white; animation-delay: 0.2s;" class="animate__animated animate__fadeIn animate__faster"> 
+                                                    How is Gab speech toward this topic?
+                                                </span>
                                                 <div class="emotions liwc animate__animated animate__fadeIn animate__faster" style="animation-delay: 0.4s;"> 
                                                     <span class="n-likes" style="font-size: 22px;">
                                                         ${liwc_sentiment[0][0].replace('_', ' ')}: ${Math.round(liwc_sentiment[0][1], 1)}%
-                                                        <br><span style="font-size:11px"> Social activities </span>
+                                                        ${ liwc_meaning[liwc_sentiment[0][0]] ? `<br><span style="font-size:11px"> ${liwc_meaning[liwc_sentiment[0][0]]} </span>` : `` }
                                                     </span>
                                                     <span class="n-likes" style="font-size: 20px;">
                                                         ${liwc_sentiment[1][0].replace('_', ' ')}: ${Math.round(liwc_sentiment[1][1], 1)}%
+                                                        ${ liwc_meaning[liwc_sentiment[1][0]] ? `<br><span style="font-size:11px"> ${liwc_meaning[liwc_sentiment[1][0]]} </span>` : `` }
+
                                                     </span>
                                                     <span class="n-likes" style="font-size: 18px;">
                                                         ${liwc_sentiment[2][0].replace('_', ' ')}: ${Math.round(liwc_sentiment[2][1], 1)}%
+                                                        ${ liwc_meaning[liwc_sentiment[2][0]] ? `<br><span style="font-size:11px"> ${liwc_meaning[liwc_sentiment[2][0]]} </span>` : `` }
+                                                    </span>
+                                                    <span class="n-likes" style="font-size: 16px;">
+                                                        ${liwc_sentiment[3][0].replace('_', ' ')}: ${Math.round(liwc_sentiment[3][1], 1)}%
+                                                        ${ liwc_meaning[liwc_sentiment[3][0]] ? `<br><span style="font-size:11px"> ${liwc_meaning[liwc_sentiment[3][0]]} </span>` : `` }
                                                     </span>
                                                 </div>
                                             </div>
@@ -319,7 +365,7 @@ Highcharts.chart('container', {
                                         <div class="users">
                                             <div class="emotions"> 
                                                 <span style="font-size:11px; font-weight:normal; animation-delay: 0.6s;" class="animate__animated animate__fadeIn animate__faster"> 
-                                                    Relevant users 
+                                                    Users relevant to the topic (based on the amount of likes in their messages)
                                                 </span>
                                                 <span class="n-likes animate__animated animate__fadeIn animate__faster" style="font-size: 32px; animation-delay: 0.6s;">
                                                     1. <a href="https://gab.com/${topicMetadata.users[0]}" target="_blank"> ${topicMetadata.users[0]} </a>
@@ -337,6 +383,33 @@ Highcharts.chart('container', {
                                                     5. <a href="https://gab.com/${topicMetadata.users[4]}" target="_blank"> ${topicMetadata.users[4]} </a>
                                                 </span>
                                             </div>
+                                            ${
+                                                (real_world[this.series.name] ? `                                                
+                                                    <div style="animation-delay: 1.1s;" class="news-articles animate__animated animate__fadeIn animate__faster">
+                                                        <span style="display: flex;justify-content: center;font-size:11px; font-weight:normal; color: white; animation-delay: 0.2s;" class="animate__animated animate__fadeIn animate__faster"> 
+                                                            News articles about this topic
+                                                        </span>
+                                                        <div class="news">
+                                                            ${
+                                                                real_world[this.series.name].map(article => {
+                                                                    return `
+                                                                        <div class="article">
+                                                                            <a href="${article}" target="_blank">
+                                                                                <span class="material-icons">
+                                                                                    public
+                                                                                </span>
+                                                                                <span class="article-domain"> ${domain_from_url(article)} </span>
+                                                                            </a>
+                                                                        </div>
+                                                                    `;
+                                                                }).join(' ')
+                                                            }
+                                                        </div>
+                                                    </div>                                                
+                                                ` : ``)
+                                            }
+
+
                                             <div class="sample-box animate__animated animate__fadeIn animate__faster"> 
                                                 <button class="action-button">
                                                     ${"SEE MESSAGES"}
