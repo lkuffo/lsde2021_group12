@@ -1,4 +1,4 @@
-graph_groups_data = {
+let graph_groups_data = {
     1: {
         info: "This group talks about XXX, XXX, YYY",
         sentiment: "This group sentiment is 0.482"
@@ -41,88 +41,86 @@ graph_groups_data = {
     }
 }
 
-graph_data = {
+let graph_data = {
     "nodes": [
-      {"pagerank": 34.59, "id": "Myriel", "group": 1},
-      {"pagerank": 34.59, "id": "Napoleon", "group": 1},
-      {"pagerank": 34.59, "id": "Mlle.Baptistine", "group": 1},
-      {"pagerank": 34.59, "id": "Mme.Magloire", "group": 1},
-      {"pagerank": 34.59, "id": "CountessdeLo", "group": 1},
-      {"pagerank": 34.59, "id": "Geborand", "group": 1},
-      {"pagerank": 34.59, "id": "Champtercier", "group": 1},
-      {"pagerank": 34.59, "id": "Cravatte", "group": 1},
-      {"pagerank": 34.59, "id": "Count", "group": 1},
-      {"pagerank": 34.59, "id": "OldMan", "group": 1},
-      {"pagerank": 34.59, "id": "Labarre", "group": 2},
-      {"pagerank": 34.59, "id": "Valjean", "group": 2},
-      {"pagerank": 34.59, "id": "Marguerite", "group": 3},
-      {"pagerank": 34.59, "id": "Mme.deR", "group": 2},
-      {"pagerank": 34.59, "id": "Isabeau", "group": 2},
-      {"pagerank": 34.59, "id": "Gervais", "group": 2},
-      {"pagerank": 34.59, "id": "Tholomyes", "group": 3},
-      {"pagerank": 34.59, "id": "Listolier", "group": 3},
-      {"pagerank": 34.59, "id": "Fameuil", "group": 3},
-      {"pagerank": 34.59, "id": "Blacheville", "group": 3},
-      {"pagerank": 34.59, "id": "Favourite", "group": 3},
-      {"pagerank": 34.59, "id": "Dahlia", "group": 3},
-      {"pagerank": 34.59, "id": "Zephine", "group": 3},
-      {"pagerank": 34.59, "id": "Fantine", "group": 3},
-      {"pagerank": 34.59, "id": "Mme.Thenardier", "group": 4},
-      {"pagerank": 34.59, "id": "Thenardier", "group": 4},
-      {"pagerank": 34.59, "id": "Cosette", "group": 5},
-      {"pagerank": 34.59, "id": "Javert", "group": 4},
-      {"pagerank": 34.59, "id": "Fauchelevent", "group": 0},
-      {"pagerank": 34.59, "id": "Bamatabois", "group": 2},
-      {"pagerank": 34.59, "id": "Perpetue", "group": 3},
-      {"pagerank": 34.59, "id": "Simplice", "group": 2},
-      {"pagerank": 34.59, "id": "Scaufflaire", "group": 2},
-      {"pagerank": 34.59, "id": "Woman1", "group": 2},
-      {"pagerank": 34.59, "id": "Judge", "group": 2},
-      {"pagerank": 34.59, "id": "Champmathieu", "group": 2},
-      {"pagerank": 34.59, "id": "Brevet", "group": 2},
-      {"pagerank": 34.59, "id": "Chenildieu", "group": 2},
-      {"pagerank": 34.59, "id": "Cochepaille", "group": 2},
-      {"pagerank": 34.59, "id": "Pontmercy", "group": 4},
-      {"pagerank": 34.59, "id": "Boulatruelle", "group": 6},
-      {"pagerank": 34.59, "id": "Eponine", "group": 4},
-      {"pagerank": 34.59, "id": "Anzelma", "group": 4},
-      {"pagerank": 34.59, "id": "Woman2", "group": 5},
-      {"pagerank": 34.59, "id": "MotherInnocent", "group": 0},
-      {"pagerank": 34.59, "id": "Gribier", "group": 0},
-      {"pagerank": 34.59, "id": "Jondrette", "group": 7},
-      {"pagerank": 34.59, "id": "Mme.Burgon", "group": 7},
-      {"pagerank": 34.59, "id": "Gavroche", "group": 8},
-      {"pagerank": 34.59, "id": "Gillenormand", "group": 5},
-      {"pagerank": 34.59, "id": "Magnon", "group": 5},
-      {"pagerank": 34.59, "id": "Mlle.Gillenormand", "group": 5},
-      {"pagerank": 34.59, "id": "Mme.Pontmercy", "group": 5},
-      {"pagerank": 34.59, "id": "Mlle.Vaubois", "group": 5},
-      {"pagerank": 34.59, "id": "Lt.Gillenormand", "group": 5},
-      {"pagerank": 34.59, "id": "Marius", "group": 8},
-      {"pagerank": 34.59, "id": "BaronessT", "group": 5},
-      {"pagerank": 34.59, "id": "Mabeuf", "group": 8},
-      {"pagerank": 34.59, "id": "Enjolras", "group": 8},
-      {"pagerank": 34.59, "id": "Combeferre", "group": 8},
-      {"pagerank": 34.59, "id": "Prouvaire", "group": 8},
-      {"pagerank": 34.59, "id": "Feuilly", "group": 8},
-      {"pagerank": 34.59, "id": "Courfeyrac", "group": 8},
-      {"pagerank": 34.59, "id": "Bahorel", "group": 8},
-      {"pagerank": 34.59, "id": "Bossuet", "group": 8},
-      {"pagerank": 34.59, "id": "Joly", "group": 8},
-      {"pagerank": 34.59, "id": "Grantaire", "group": 8},
-      {"pagerank": 34.59, "id": "MotherPlutarch", "group": 9},
-      {"pagerank": 34.59, "id": "Gueulemer", "group": 4},
-      {"pagerank": 34.59, "id": "Babet", "group": 4},
-      {"pagerank": 34.59, "id": "Claquesous", "group": 4},
-      {"pagerank": 34.59, "id": "Montparnasse", "group": 4},
-      {"pagerank": 34.59, "id": "Toussaint", "group": 5},
-      {"pagerank": 34.59, "id": "Child1", "group": 10},
-      {"pagerank": 34.59, "id": "Child2", "group": 10},
-      {"pagerank": 34.59, "id": "Brujon", "group": 4},
-      {"pagerank": 34.59, "id": "Mme.Hucheloup", "group": 8}
-    ].map((n) => {
-        return {...n, pagerank: Math.floor(Math.random() * (30 - 1 + 1) + 1)}
-    }),
+      {"id": "Myriel", "group": 1},
+      {"id": "Napoleon", "group": 1},
+      {"id": "Mlle.Baptistine", "group": 1},
+      {"id": "Mme.Magloire", "group": 1},
+      {"id": "CountessdeLo", "group": 1},
+      {"id": "Geborand", "group": 1},
+      {"id": "Champtercier", "group": 1},
+      {"id": "Cravatte", "group": 1},
+      {"id": "Count", "group": 1},
+      {"id": "OldMan", "group": 1},
+      {"id": "Labarre", "group": 2},
+      {"id": "Valjean", "group": 2},
+      {"id": "Marguerite", "group": 3},
+      {"id": "Mme.deR", "group": 2},
+      {"id": "Isabeau", "group": 2},
+      {"id": "Gervais", "group": 2},
+      {"id": "Tholomyes", "group": 3},
+      {"id": "Listolier", "group": 3},
+      {"id": "Fameuil", "group": 3},
+      {"id": "Blacheville", "group": 3},
+      {"id": "Favourite", "group": 3},
+      {"id": "Dahlia", "group": 3},
+      {"id": "Zephine", "group": 3},
+      {"id": "Fantine", "group": 3},
+      {"id": "Mme.Thenardier", "group": 4},
+      {"id": "Thenardier", "group": 4},
+      {"id": "Cosette", "group": 5},
+      {"id": "Javert", "group": 4},
+      {"id": "Fauchelevent", "group": 0},
+      {"id": "Bamatabois", "group": 2},
+      {"id": "Perpetue", "group": 3},
+      {"id": "Simplice", "group": 2},
+      {"id": "Scaufflaire", "group": 2},
+      {"id": "Woman1", "group": 2},
+      {"id": "Judge", "group": 2},
+      {"id": "Champmathieu", "group": 2},
+      {"id": "Brevet", "group": 2},
+      {"id": "Chenildieu", "group": 2},
+      {"id": "Cochepaille", "group": 2},
+      {"id": "Pontmercy", "group": 4},
+      {"id": "Boulatruelle", "group": 6},
+      {"id": "Eponine", "group": 4},
+      {"id": "Anzelma", "group": 4},
+      {"id": "Woman2", "group": 5},
+      {"id": "MotherInnocent", "group": 0},
+      {"id": "Gribier", "group": 0},
+      {"id": "Jondrette", "group": 7},
+      {"id": "Mme.Burgon", "group": 7},
+      {"id": "Gavroche", "group": 8},
+      {"id": "Gillenormand", "group": 5},
+      {"id": "Magnon", "group": 5},
+      {"id": "Mlle.Gillenormand", "group": 5},
+      {"id": "Mme.Pontmercy", "group": 5},
+      {"id": "Mlle.Vaubois", "group": 5},
+      {"id": "Lt.Gillenormand", "group": 5},
+      {"id": "Marius", "group": 8},
+      {"id": "BaronessT", "group": 5},
+      {"id": "Mabeuf", "group": 8},
+      {"id": "Enjolras", "group": 8},
+      {"id": "Combeferre", "group": 8},
+      {"id": "Prouvaire", "group": 8},
+      {"id": "Feuilly", "group": 8},
+      {"id": "Courfeyrac", "group": 8},
+      {"id": "Bahorel", "group": 8},
+      {"id": "Bossuet", "group": 8},
+      {"id": "Joly", "group": 8},
+      {"id": "Grantaire", "group": 8},
+      {"id": "MotherPlutarch", "group": 9},
+      {"id": "Gueulemer", "group": 4},
+      {"id": "Babet", "group": 4},
+      {"id": "Claquesous", "group": 4},
+      {"id": "Montparnasse", "group": 4},
+      {"id": "Toussaint", "group": 5},
+      {"id": "Child1", "group": 10},
+      {"id": "Child2", "group": 10},
+      {"id": "Brujon", "group": 4},
+      {"id": "Mme.Hucheloup", "group": 8}
+    ],
     "links": [
       {"source": "Napoleon", "target": "Myriel", "value": 1},
       {"source": "Mlle.Baptistine", "target": "Myriel", "value": 8},
@@ -380,148 +378,3 @@ graph_data = {
       {"source": "Mme.Hucheloup", "target": "Enjolras", "value": 1}
     ]
   }
-
-
-let width = 960;
-let height = 600;
-var svg = d3.select("#chartFigure")
- .append("svg").attr("width", 960).attr("height", 600);
-
-var color = d3.scaleOrdinal(d3.schemeCategory20);
-
-var simulation = d3.forceSimulation()
-.force("link", d3.forceLink().id(function(d) { return d.id; }))
-.force("charge", d3.forceManyBody())
-.force("center", d3.forceCenter(width / 2, height / 2));
-
-let graph = graph_data;
-
-var link = svg.append("g")
-  .attr("class", "links")
-  .selectAll("line")
-  .data(graph.links)
-  .enter().append("line")
-  .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
-
-// Three function that change the tooltip when user hover / move / leave a cell
-var mouseover = function(d) {
-  Tooltip
-    .style("opacity", 1)
-    .style("box-shadow", "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)")
-    .attr("class", "graph-tooltip animate__animated animate__fadeIn animate__faster")
-  d3.select(this)
-    .style("stroke", "black")
-    .style("opacity", 1)
-}
-var mousemove = function(d) {
-  d3.select(".graph-tooltip").style('background-color', color(d.group));
-  Tooltip
-    .html("The exact value of<br>this cell is: " + d.id + ", " + graph_groups_data[d.group].info)
-}
-var mouseleave = function(d) {
-  Tooltip
-    .style("opacity", 0)
-    .attr("class", "graph-tooltip animate__animated animate__fadeOut animate__faster")
-  d3.select(this)
-    .style("stroke", "none")
-    .style("opacity", 0.8)
-}
-
-var node = svg.append("g")
-  .attr("class", "nodes")
-  .selectAll("g")
-  .data(graph.nodes)
-  .enter().append("g")
-  .on("mouseover", mouseover)
-  .on("mousemove", mousemove)
-  .on("mouseleave", mouseleave)
-
-
-let minDegree = Infinity;
-let maxDegree = 0;
-graph_data.nodes.forEach(node => {
-  if (node.pagerank < minDegree){
-      minDegree = node.pagerank;
-  }
-  if (node.pagerank > maxDegree){
-      maxDegree = node.pagerank;
-  }
-})
-
-
-var Tooltip = d3.select("#chartFigure")
-  .append("div")
-  .style("opacity", 0)
-  .attr("class", "graph-tooltip")
-  .style("background-color", "white")
-  .style("color", "white")
-  .style("position", "absolute")
-  .style("padding", "8px")
-  .style("top", '0px')
-  .style("left", '0px')
-
-
-var minRadius = 5;
-var maxRadius = 10;
-var scale = d3.scaleLinear().domain( [minDegree, maxDegree] ).range([minRadius,maxRadius]);
-
-var circles = node.append("circle")
-  .attr("r", function(d) { 
-      return scale(d.pagerank);
-  })
-  .attr("fill", function(d) { return color(d.group); });
-
-// Create a drag handler and append it to the node object instead
-var drag_handler = d3.drag()
-  .on("start", dragstarted)
-  .on("drag", dragged)
-  .on("end", dragended);
-
-drag_handler(node);
-
-var lables = node.append("text")
-  .text(function(d) {
-  return d.id;
-  })
-  .attr('x', 6)
-  .attr('y', 3);
-
-node.append("title")
-  .text(function(d) { return d.id; });
-
-simulation
-  .nodes(graph.nodes)
-  .on("tick", ticked);
-
-simulation.force("link")
-  .links(graph.links);
-
-  function ticked() {
-      link
-          .attr("x1", function(d) { return d.source.x; })
-          .attr("y1", function(d) { return d.source.y; })
-          .attr("x2", function(d) { return d.target.x; })
-          .attr("y2", function(d) { return d.target.y; });
-
-      node
-          .attr("transform", function(d) {
-              return "translate(" + d.x + "," + d.y + ")";
-          })
-      }
-
-function dragstarted(d) {
-  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-  d.fx = d.x;
-  d.fy = d.y;
-}
-
-function dragged(d) {
-  d.fx = d3.event.x;
-  d.fy = d3.event.y;
-}
-
-function dragended(d) {
-  if (!d3.event.active) simulation.alphaTarget(0);
-  d.fx = null;
-  d.fy = null;
-}

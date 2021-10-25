@@ -133,7 +133,7 @@ html{
     width: 25%;
   }
 
-  .sample-box{
+  .sample-box, .graph-box{
     animation-delay: 1.1s;
   }
 
@@ -164,6 +164,15 @@ html{
   }
 
   .sample-box{
+    display: flex;
+    width: 100%;
+    margin-top: 32px;
+    color: white;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .graph-box{
     display: flex;
     width: 100%;
     margin-top: 32px;
@@ -377,4 +386,32 @@ html{
 
 .highcharts-xaxis-labels text{
   cursor: pointer;
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+text {
+  font-size: 10px;
+}
+
+
+#chartFigure{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.graph-tooltip{
+  height: 100px;
+  width: 300px;
 }
