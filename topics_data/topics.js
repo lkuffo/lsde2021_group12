@@ -321,7 +321,7 @@ Highcharts.chart('container', {
                                     </span>
                                 </div>
                                 <div class="topic-name">
-                                    <span style="font-size:11px; font-weight:normal;"> ${this.category} | Messages Sample </span>
+                                    <span style="font-size:11px; font-weight:normal;"> ${this.category} | Users interaction </span>
                                     <div> ${this.series.name}</div>
                                 </div>
                                 <div id="chartFigure" class="chart-figure">    
