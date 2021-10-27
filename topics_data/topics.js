@@ -284,11 +284,16 @@ Highcharts.chart('container', {
                                                 ` : ``)
                                             }
 
-                                            <div class="graph-box animate__animated animate__fadeIn animate__faster"> 
-                                                <button class="action-button">
-                                                    ${"SEE USERS INTERACTION"}
-                                                </button>
-                                            </div>
+                                            ${
+                                                graph_data[this.category + "_" + this.series.name] ? 
+                                                `
+                                                <div class="graph-box animate__animated animate__fadeIn animate__faster"> 
+                                                    <button class="action-button">
+                                                        ${"SEE USERS INTERACTION"}
+                                                    </button>
+                                                </div>
+                                                ` : `` 
+                                            }
 
 
                                             <div class="sample-box animate__animated animate__fadeIn animate__faster"> 
@@ -356,7 +361,12 @@ Highcharts.chart('container', {
                         // .force("charge", d3.forceManyBody().strength(-240))
                         // .force("link", d3.forceLink().distance(50).strength(1).id(function(d) { return d.id; }));
                         
-                        let graph = graph_data;
+                        let graph_index = this.category + "_" + this.series.name;
+                        console.log(graph_index);
+                        let graph = graph_data[graph_index];
+                        if (!graph){
+                            return;
+                        }
 
                         let users_by_group = graph.nodes.reduce((usersGroups, node) => {
                             if (!(node.group in usersGroups)){
@@ -391,7 +401,7 @@ Highcharts.chart('container', {
                         var link = svg.append("g")
                           .attr("class", "links")
                           .selectAll("line")
-                          .data(graph.links)
+                          .data(graph.edges)
                           .enter().append("line")
                           .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
                         
@@ -431,7 +441,7 @@ Highcharts.chart('container', {
                         
                         let minDegree = Infinity;
                         let maxDegree = 0;
-                        graph_data.nodes.forEach(node => {
+                        graph.nodes.forEach(node => {
                           if (node.pagerank < minDegree){
                               minDegree = node.pagerank;
                           }
@@ -487,7 +497,7 @@ Highcharts.chart('container', {
                           .on("tick", ticked);
                         
                         simulation.force("link")
-                          .links(graph.links);
+                          .links(graph.edges);
                         
                           function ticked() {
                             //   link

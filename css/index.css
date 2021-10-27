@@ -149,6 +149,8 @@ html{
     margin-left: 0px !important;
     text-transform: capitalize;
     margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
   }
 
   .emotions-icons{
@@ -200,7 +202,7 @@ html{
 
   .n-likes a {
     color: white;
-    
+    text-decoration: underline;
   }
 
 

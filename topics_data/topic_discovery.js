@@ -285,7 +285,17 @@ Highcharts.chart('container', {
                                                     </div>                                                
                                                 ` : ``)
                                             }
-
+                                            
+                                            ${
+                                                graph_data[this.category + "_" + this.series.name] ? 
+                                                `
+                                                <div class="graph-box animate__animated animate__fadeIn animate__faster"> 
+                                                    <button class="action-button">
+                                                        ${"SEE USERS INTERACTION"}
+                                                    </button>
+                                                </div>
+                                                ` : `` 
+                                            }
 
                                             <div class="sample-box animate__animated animate__fadeIn animate__faster"> 
                                                 <button class="action-button">
@@ -304,6 +314,236 @@ Highcharts.chart('container', {
                         setTimeout(() => {
                             $('.topic-detail').remove();
                         }, 500);
+                    });
+
+                    $('.graph-box').click(() => {
+                        $('.topic-container').append(
+                            `
+                            <div class="sample-detail animate__animated animate__fadeIn animate__faster" style="height: 140% !important;">
+                                <div class="close-sample">
+                                    <span class="material-icons">
+                                        highlight_off
+                                    </span>
+                                </div>
+                                <div class="topic-name">
+                                    <span style="font-size:11px; font-weight:normal;"> ${this.category} | Users interaction </span>
+                                    <div> ${this.series.name}</div>
+                                </div>
+                                <div id="chartFigure" class="chart-figure">    
+                                </div>
+                            </div>
+                            `
+                        );
+                        $('.close-sample').click(() => {
+                            $('.sample-detail').removeClass('animate__fadeIn');
+                            $('.sample-detail').addClass('animate__fadeOut');
+                            setTimeout(() => {
+                                $('.sample-detail').remove();
+                            }, 500);
+                        });
+
+
+                        let width = 936;
+                        let height = 700;
+                        let radius = 15;
+                        var svg = d3.select("#chartFigure")
+                         .append("svg").attr("width", width).attr("height", height);
+                        
+                        var color = d3.scaleOrdinal(d3.schemeCategory20);
+                        
+                        var simulation = d3.forceSimulation()
+                        .force("link", d3.forceLink().id(function(d) { return d.id; }))
+                        .force("charge", d3.forceManyBody())
+                        .force("center", d3.forceCenter(width / 2, height / 2))
+                        // .velocityDecay(0.1)
+                        // .force("x", d3.forceX(width / 2).strength(.05))
+                        // .force("y", d3.forceY(height / 2).strength(.05))
+                        // .force("charge", d3.forceManyBody().strength(-240))
+                        // .force("link", d3.forceLink().distance(50).strength(1).id(function(d) { return d.id; }));
+                        
+                        let graph_index = this.category + "_" + this.series.name;
+                        console.log(graph_index);
+                        let graph = graph_data[graph_index];
+                        if (!graph){
+                            return;
+                        }
+
+                        let users_by_group = graph.nodes.reduce((usersGroups, node) => {
+                            if (!(node.group in usersGroups)){
+                                usersGroups[node.group] = 0
+                            }
+                            usersGroups[node.group] += 1
+                            return usersGroups;
+                        }, {});
+
+                        // Create items array
+                        var items = Object.keys(users_by_group).map(function(key) {
+                            return [key, users_by_group[key]];
+                        });
+                        
+                        // Sort the array based on the second element
+                        items.sort(function(first, second) {
+                            return second[1] - first[1];
+                        });
+                        
+                        top_10_groups = items.slice(0, 15).map(i => i[0]);
+
+                        graph.nodes = graph.nodes.map((n) => {
+                            if (top_10_groups.includes(n.group.toString())){
+                                return n;
+                            } 
+                            return {
+                                ...n,
+                                group: 69
+                            }
+                        });
+                        
+                        var link = svg.append("g")
+                          .attr("class", "links")
+                          .selectAll("line")
+                          .data(graph.edges)
+                          .enter().append("line")
+                          .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+                        
+                        // Three function that change the tooltip when user hover / move / leave a cell
+                        var mouseover = function(d) {
+                        //   Tooltip
+                        //     .style("opacity", 1)
+                        //     .style("box-shadow", "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)")
+                        //     .attr("class", "graph-tooltip animate__animated animate__fadeIn animate__faster")
+                          d3.select(this)
+                            .style("opacity", 1);
+    
+                        }
+                        var mousemove = function(d) {
+                          d3.select(".graph-tooltip").style('background-color', color(d.group));
+                        //   Tooltip
+                        //     .html("User: " + d.id + ", " + graph_groups_data[d.group].info)
+                        }
+                        var mouseleave = function(d) {
+                        //   Tooltip
+                        //     .style("opacity", 0)
+                        //     .attr("class", "graph-tooltip animate__animated animate__fadeOut animate__faster")
+                          d3.select(this)
+                            .style("stroke", "none")
+                            .style("opacity", 0.8)
+                        }
+                        
+                        var node = svg.append("g")
+                          .attr("class", "nodes")
+                          .selectAll("g")
+                          .data(graph.nodes)
+                          .enter().append("g")
+                          .on("mouseover", mouseover)
+                          .on("mousemove", mousemove)
+                          .on("mouseleave", mouseleave)
+                        
+                        
+                        let minDegree = Infinity;
+                        let maxDegree = 0;
+                        graph.nodes.forEach(node => {
+                          if (node.pagerank < minDegree){
+                              minDegree = node.pagerank;
+                          }
+                          if (node.pagerank > maxDegree){
+                              maxDegree = node.pagerank;
+                          }
+                        })
+                        
+                        
+                        // var Tooltip = d3.select("#chartFigure")
+                        //   .append("div")
+                        //   .style("opacity", 0)
+                        //   .attr("class", "graph-tooltip")
+                        //   .style("background-color", "white")
+                        //   .style("color", "white")
+                        //   .style("position", "absolute")
+                        //   .style("padding", "8px")
+                        //   .style("top", '0px')
+                        //   .style("left", '0px')
+                        
+                        
+                        var minRadius = 2;
+                        var maxRadius = 17;
+                        var scale = d3.scaleSqrt().domain( [minDegree, maxDegree] ).range([minRadius,maxRadius]);
+                        
+                        node.append("circle")
+                          .attr("r", function(d) { 
+                              return scale(d.pagerank | 5);
+                          })
+                          .attr("fill", function(d) { return color(d.group); });
+                        
+                        // Create a drag handler and append it to the node object instead
+                        var drag_handler = d3.drag()
+                          .on("start", dragstarted)
+                          .on("drag", dragged)
+                          .on("end", dragended);
+                        
+                        drag_handler(node);
+                        
+                        node.append("text")
+                          .text(function(d) {
+                            return d.id;
+                          })
+                          .attr("fill", '#ffffff')
+                          .attr('x', 6)
+                          .attr('y', 3);
+                        
+                        node.append("title")
+                          .text(function(d) { return d.id; });
+                        
+                        simulation
+                          .nodes(graph.nodes)
+                          .on("tick", ticked);
+                        
+                        simulation.force("link")
+                          .links(graph.edges);
+                        
+                          function ticked() {
+                            //   link
+                            //       .attr("x1", function(d) { return d.source.x; })
+                            //       .attr("y1", function(d) { return d.source.y; })
+                            //       .attr("x2", function(d) { return d.target.x; })
+                            //       .attr("y2", function(d) { return d.target.y; });
+                        
+                            //   node
+                            //       .attr("transform", function(d) {
+                            //           return "translate(" + d.x + "," + d.y + ")";
+                            //       })
+                                  node.attr("transform", function(d) { 
+                                      d.x = Math.max(radius, Math.min(width - radius, d.x));
+                                      return "translate(" + d.x + "," + d.y + ")";
+                                    })
+                                  .attr("transform", function(d) { 
+                                      d.y = Math.max(radius, Math.min(height - radius, d.y)); 
+                                      return "translate(" + d.x + "," + d.y + ")";
+                                    });
+                          
+                              link.attr("x1", function(d) { return d.source.x; })
+                                  .attr("y1", function(d) { return d.source.y; })
+                                  .attr("x2", function(d) { return d.target.x; })
+                                  .attr("y2", function(d) { return d.target.y; });
+                              }
+
+
+                        
+                        function dragstarted(d) {
+                          if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+                          d.fx = d.x;
+                          d.fy = d.y;
+                        }
+                        
+                        function dragged(d) {
+                          d.fx = d3.event.x;
+                          d.fy = d3.event.y;
+                        }
+                        
+                        function dragended(d) {
+                          if (!d3.event.active) simulation.alphaTarget(0);
+                          d.fx = null;
+                          d.fy = null;
+                        }
+                        
                     });
 
                     $('.sample-box').click(() => {
