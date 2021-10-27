@@ -314,7 +314,7 @@ Highcharts.chart('container', {
                     $('.graph-box').click(() => {
                         $('.topic-container').append(
                             `
-                            <div class="sample-detail animate__animated animate__fadeIn animate__faster">
+                            <div class="sample-detail animate__animated animate__fadeIn animate__faster" style="height: 140% !important;">
                                 <div class="close-sample">
                                     <span class="material-icons">
                                         highlight_off
@@ -338,19 +338,55 @@ Highcharts.chart('container', {
                         });
 
 
-                        let width = 960;
-                        let height = 500;
+                        let width = 936;
+                        let height = 700;
+                        let radius = 15;
                         var svg = d3.select("#chartFigure")
-                         .append("svg").attr("width", 960).attr("height", 500);
+                         .append("svg").attr("width", width).attr("height", height);
                         
                         var color = d3.scaleOrdinal(d3.schemeCategory20);
                         
                         var simulation = d3.forceSimulation()
                         .force("link", d3.forceLink().id(function(d) { return d.id; }))
                         .force("charge", d3.forceManyBody())
-                        .force("center", d3.forceCenter(width / 2, height / 2));
+                        .force("center", d3.forceCenter(width / 2, height / 2))
+                        // .velocityDecay(0.1)
+                        // .force("x", d3.forceX(width / 2).strength(.05))
+                        // .force("y", d3.forceY(height / 2).strength(.05))
+                        // .force("charge", d3.forceManyBody().strength(-240))
+                        // .force("link", d3.forceLink().distance(50).strength(1).id(function(d) { return d.id; }));
                         
                         let graph = graph_data;
+
+                        let users_by_group = graph.nodes.reduce((usersGroups, node) => {
+                            if (!(node.group in usersGroups)){
+                                usersGroups[node.group] = 0
+                            }
+                            usersGroups[node.group] += 1
+                            return usersGroups;
+                        }, {});
+
+                        // Create items array
+                        var items = Object.keys(users_by_group).map(function(key) {
+                            return [key, users_by_group[key]];
+                        });
+                        
+                        // Sort the array based on the second element
+                        items.sort(function(first, second) {
+                            return second[1] - first[1];
+                        });
+                        
+                        top_10_groups = items.slice(0, 15).map(i => i[0]);
+
+                        graph.nodes = graph.nodes.map((n) => {
+                            if (top_10_groups.includes(n.group.toString())){
+                                return n;
+                            } 
+                            return {
+                                ...n,
+                                group: 69
+                            }
+                        });
                         
                         var link = svg.append("g")
                           .attr("class", "links")
@@ -361,23 +397,23 @@ Highcharts.chart('container', {
                         
                         // Three function that change the tooltip when user hover / move / leave a cell
                         var mouseover = function(d) {
-                          Tooltip
-                            .style("opacity", 1)
-                            .style("box-shadow", "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)")
-                            .attr("class", "graph-tooltip animate__animated animate__fadeIn animate__faster")
+                        //   Tooltip
+                        //     .style("opacity", 1)
+                        //     .style("box-shadow", "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)")
+                        //     .attr("class", "graph-tooltip animate__animated animate__fadeIn animate__faster")
                           d3.select(this)
-                            .style("stroke", "black")
-                            .style("opacity", 1)
+                            .style("opacity", 1);
+    
                         }
                         var mousemove = function(d) {
                           d3.select(".graph-tooltip").style('background-color', color(d.group));
-                          Tooltip
-                            .html("User: " + d.id + ", " + graph_groups_data[d.group].info)
+                        //   Tooltip
+                        //     .html("User: " + d.id + ", " + graph_groups_data[d.group].info)
                         }
                         var mouseleave = function(d) {
-                          Tooltip
-                            .style("opacity", 0)
-                            .attr("class", "graph-tooltip animate__animated animate__fadeOut animate__faster")
+                        //   Tooltip
+                        //     .style("opacity", 0)
+                        //     .attr("class", "graph-tooltip animate__animated animate__fadeOut animate__faster")
                           d3.select(this)
                             .style("stroke", "none")
                             .style("opacity", 0.8)
@@ -405,21 +441,21 @@ Highcharts.chart('container', {
                         })
                         
                         
-                        var Tooltip = d3.select("#chartFigure")
-                          .append("div")
-                          .style("opacity", 0)
-                          .attr("class", "graph-tooltip")
-                          .style("background-color", "white")
-                          .style("color", "white")
-                          .style("position", "absolute")
-                          .style("padding", "8px")
-                          .style("top", '0px')
-                          .style("left", '0px')
+                        // var Tooltip = d3.select("#chartFigure")
+                        //   .append("div")
+                        //   .style("opacity", 0)
+                        //   .attr("class", "graph-tooltip")
+                        //   .style("background-color", "white")
+                        //   .style("color", "white")
+                        //   .style("position", "absolute")
+                        //   .style("padding", "8px")
+                        //   .style("top", '0px')
+                        //   .style("left", '0px')
                         
                         
-                        var minRadius = 5;
-                        var maxRadius = 10;
-                        var scale = d3.scaleLinear().domain( [minDegree, maxDegree] ).range([minRadius,maxRadius]);
+                        var minRadius = 2;
+                        var maxRadius = 17;
+                        var scale = d3.scaleSqrt().domain( [minDegree, maxDegree] ).range([minRadius,maxRadius]);
                         
                         node.append("circle")
                           .attr("r", function(d) { 
@@ -454,17 +490,32 @@ Highcharts.chart('container', {
                           .links(graph.links);
                         
                           function ticked() {
-                              link
-                                  .attr("x1", function(d) { return d.source.x; })
+                            //   link
+                            //       .attr("x1", function(d) { return d.source.x; })
+                            //       .attr("y1", function(d) { return d.source.y; })
+                            //       .attr("x2", function(d) { return d.target.x; })
+                            //       .attr("y2", function(d) { return d.target.y; });
+                        
+                            //   node
+                            //       .attr("transform", function(d) {
+                            //           return "translate(" + d.x + "," + d.y + ")";
+                            //       })
+                                  node.attr("transform", function(d) { 
+                                      d.x = Math.max(radius, Math.min(width - radius, d.x));
+                                      return "translate(" + d.x + "," + d.y + ")";
+                                    })
+                                  .attr("transform", function(d) { 
+                                      d.y = Math.max(radius, Math.min(height - radius, d.y)); 
+                                      return "translate(" + d.x + "," + d.y + ")";
+                                    });
+                          
+                              link.attr("x1", function(d) { return d.source.x; })
                                   .attr("y1", function(d) { return d.source.y; })
                                   .attr("x2", function(d) { return d.target.x; })
                                   .attr("y2", function(d) { return d.target.y; });
-                        
-                              node
-                                  .attr("transform", function(d) {
-                                      return "translate(" + d.x + "," + d.y + ")";
-                                  })
                               }
+
+
                         
                         function dragstarted(d) {
                           if (!d3.event.active) simulation.alphaTarget(0.3).restart();
@@ -553,6 +604,5 @@ Highcharts.chart('container', {
 
   setTimeout(() => {
     $('.highcharts-xaxis-labels text').click(() => {
-        console.log($(this).attr("y"));
     })
   }, 3000);
