@@ -5,13 +5,6 @@ let liwc_meaning = {
     time: "Speech refering to time itself"
 }
 
-let real_world = {
-    'Seth Rich': [
-        'https://www.washingtonpost.com/news/the-fix/wp/2017/05/20/the-seth-rich-conspiracy-shows-how-fake-news-still-works/',
-        'https://www.wired.com/2017/05/seth-rich-filter-bubble/'
-    ]
-}
-
 function domain_from_url(url) {
     var result
     var match
@@ -150,8 +143,8 @@ Highcharts.chart('container', {
                     })
                     liwc_sentiment = liwc_sentiment.filter((s) => !['focuspresent', 'focuspast', 'focusfuture'].includes(s[0]));
                     let vaderSentiment = topicMetadata.avg_vader_sentiment;
-                    let sentimentIcon = vaderSentiment < 0.20 ? 'sentiment_very_dissatisfied' : (vaderSentiment > 0.20) ? 'sentiment_satisfied_alt' : 'sentiment_neutral';
-                    let sentimentText = vaderSentiment < 0.20 ? 'Overall negative' : (vaderSentiment > 0.20) ? 'Overall positive' : 'Overall neutral';
+                    let sentimentIcon = vaderSentiment < 0.20 & vaderSentiment < -0.20 ? 'sentiment_very_dissatisfied' : (vaderSentiment > 0.20) ? 'sentiment_satisfied_alt' : 'sentiment_neutral';
+                    let sentimentText = vaderSentiment < 0.20 & vaderSentiment < -0.20 ? 'Overall negative' : (vaderSentiment > 0.20) ? 'Overall positive' : 'Overall neutral';
                     $('.topic-container').append(
                         `
                             <div class="topic-detail animate__animated animate__fadeIn animate__faster">
@@ -463,13 +456,13 @@ Highcharts.chart('container', {
                         //   .style("left", '0px')
                         
                         
-                        var minRadius = 2;
+                        var minRadius = 5;
                         var maxRadius = 17;
-                        var scale = d3.scaleSqrt().domain( [minDegree, maxDegree] ).range([minRadius,maxRadius]);
+                        var scale = d3.scaleLinear().domain( [minDegree, maxDegree] ).range([minRadius,maxRadius]);
                         
                         node.append("circle")
                           .attr("r", function(d) { 
-                              return scale(d.pagerank | 5);
+                              return scale(d.pagerank);
                           })
                           .attr("fill", function(d) { return color(d.group); });
                         

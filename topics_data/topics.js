@@ -7,8 +7,7 @@ let liwc_meaning = {
 
 let real_world = {
     'Seth Rich': [
-        'https://www.washingtonpost.com/news/the-fix/wp/2017/05/20/the-seth-rich-conspiracy-shows-how-fake-news-still-works/',
-        'https://www.wired.com/2017/05/seth-rich-filter-bubble/'
+
     ]
 }
 
@@ -148,8 +147,9 @@ Highcharts.chart('container', {
                     })
                     liwc_sentiment = liwc_sentiment.filter((s) => !['focuspresent', 'focuspast', 'focusfuture'].includes(s[0]));
                     let vaderSentiment = topicMetadata.avg_vader_sentiment;
-                    let sentimentIcon = vaderSentiment < 0.20 ? 'sentiment_very_dissatisfied' : (vaderSentiment > 0.20) ? 'sentiment_satisfied_alt' : 'sentiment_neutral';
-                    let sentimentText = vaderSentiment < 0.20 ? 'Overall negative' : (vaderSentiment > 0.20) ? 'Overall positive' : 'Overall neutral';
+                    console.log(vaderSentiment);
+                    let sentimentIcon = vaderSentiment < 0.20 & vaderSentiment < -0.20 ? 'sentiment_very_dissatisfied' : (vaderSentiment > 0.20) ? 'sentiment_satisfied_alt' : 'sentiment_neutral';
+                    let sentimentText = vaderSentiment < 0.20 & vaderSentiment < -0.20 ? 'Overall negative' : (vaderSentiment > 0.20) ? 'Overall positive' : 'Overall neutral';
                     $('.topic-container').append(
                         `
                             <div class="topic-detail animate__animated animate__fadeIn animate__faster">
@@ -259,14 +259,14 @@ Highcharts.chart('container', {
                                                 </span>
                                             </div>
                                             ${
-                                                (real_world[this.series.name] ? `                                                
+                                                (topicMetadata.news ? `                                                
                                                     <div style="animation-delay: 1.1s;" class="news-articles animate__animated animate__fadeIn animate__faster">
                                                         <span style="display: flex;justify-content: center;font-size:11px; font-weight:normal; color: white; animation-delay: 0.2s;" class="animate__animated animate__fadeIn animate__faster"> 
                                                             News articles about this topic
                                                         </span>
                                                         <div class="news">
                                                             ${
-                                                                real_world[this.series.name].map(article => {
+                                                                topicMetadata.news.map(article => {
                                                                     return `
                                                                         <div class="article">
                                                                             <a href="${article}" target="_blank">
@@ -295,12 +295,24 @@ Highcharts.chart('container', {
                                                 ` : `` 
                                             }
 
-
                                             <div class="sample-box animate__animated animate__fadeIn animate__faster"> 
                                                 <button class="action-button">
                                                     ${"SEE MESSAGES"}
                                                 </button>
                                             </div>
+
+                                            ${
+                                                twitter_data[this.series.name] ? 
+                                                `
+                                                <div class="comparison-box animate__animated animate__fadeIn animate__faster"> 
+                                                    <button class="action-button">
+                                                        ${"Gab vs Twitter"} <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                      </svg>
+                                                    </button>
+                                                </div>
+                                                ` : `` 
+                                            }
 
                                         </div>
                                     </div>
@@ -314,6 +326,104 @@ Highcharts.chart('container', {
                         setTimeout(() => {
                             $('.topic-detail').remove();
                         }, 500);
+                    });
+
+                    $('.comparison-box').click(() => {
+
+                        let twitterMetadata = twitter_data[this.series.name];
+
+                        let t_liwc_sentiment = Object.entries(twitterMetadata.liwc_sentiment_map);
+                        t_liwc_sentiment.sort(function(a, b) {
+                            return b[1] - a[1];
+                        })
+                        t_liwc_sentiment = t_liwc_sentiment.filter((s) => !['focuspresent', 'focuspast', 'focusfuture'].includes(s[0]));
+                        let t_vaderSentiment = twitterMetadata.avg_vader_sentiment;
+                        let t_sentimentIcon = t_vaderSentiment < 0.20 ? 'sentiment_very_dissatisfied' : (t_vaderSentiment > 0.20) ? 'sentiment_satisfied_alt' : 'sentiment_neutral';
+                        let t_sentimentText = t_vaderSentiment < 0.20 ? 'Overall negative' : (t_vaderSentiment > 0.20) ? 'Overall positive' : 'Overall neutral';
+
+                        liwc_dimensions = ['negative_emotions', 'positive_emotions', 'anger', 'sad', 'anxiety', 'social', 'death', 'religion']
+
+                        $('.topic-container').append(
+                            `
+                            <div class="sample-detail animate__animated animate__fadeIn animate__faster">
+                                <div class="close-sample">
+                                    <span class="material-icons">
+                                        highlight_off
+                                    </span>
+                                </div>
+                                <div class="topic-name">
+                                    <span style="font-size:11px; font-weight:normal;"> ${this.category} | Gab vs Twitter </span>
+                                    <div> ${this.series.name}</div>
+                                </div>
+                                    <div class="topic-content">
+                                        <div class="three-columns">
+                                            <div class="topic-sentiments">
+                                                <span class="n-likes" style="font-size:24px; margin-top:16px;">
+                                                    Dimension
+                                                </span>
+                                                <span class="n-likes" style="font-size:16px; margin-top:16px;">
+                                                    Overall Sentiment
+                                                </span>
+                                                ${
+                                                    liwc_dimensions.map((d) => {
+                                                        return `
+                                                            <span class="n-likes" style="font-size:16px; margin-top:16px;">
+                                                                ${d}
+                                                            </span>
+                                                        `;
+                                                    }).join(' ')
+                                                }
+                                            </div>
+                                            <div class="topic-sentiments">
+                                                <span class="n-likes" style="font-size:24px; margin-top:16px;">
+                                                    Gab
+                                                </span>
+                                                <span class="n-likes" style="font-size:16px; margin-top:16px;">
+                                                    ${Math.round(vaderSentiment * 100) / 100}
+                                                </span>
+                                                ${
+                                                    liwc_dimensions.map((d) => {
+                                                        return `
+                                                            <span class="n-likes" style="font-size:16px; margin-top:16px;">
+                                                                ${Math.round(topicMetadata.liwc_sentiment_map[d] * 100) / 100}%
+                                                            </span>
+                                                        `;
+                                                    }).join(' ')
+                                                }
+                                            </div>
+                                            <div class="topic-sentiments">
+                                                <span class="n-likes" style="font-size:24px; margin-top:16px;">
+                                                    Twitter
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                                    </svg>
+                                                </span>
+                                                <span class="n-likes" style="font-size:16px; margin-top:16px;">
+                                                    ${Math.round(t_vaderSentiment * 100) / 100}
+                                                </span>
+                                                ${
+                                                    liwc_dimensions.map((d) => {
+                                                        return `
+                                                            <span class="n-likes" style="font-size:16px; margin-top:16px;">
+                                                                ${Math.round(twitterMetadata.liwc_sentiment_map[d] * 100) / 100}%
+                                                            </span>
+                                                        `;
+                                                    }).join(' ')
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            `
+                        );
+                        $('.close-sample').click(() => {
+                            $('.sample-detail').removeClass('animate__fadeIn');
+                            $('.sample-detail').addClass('animate__fadeOut');
+                            setTimeout(() => {
+                                $('.sample-detail').remove();
+                            }, 500);
+                        });
                     });
 
                     $('.graph-box').click(() => {
@@ -463,13 +573,13 @@ Highcharts.chart('container', {
                         //   .style("left", '0px')
                         
                         
-                        var minRadius = 2;
+                        var minRadius = 5;
                         var maxRadius = 17;
                         var scale = d3.scaleSqrt().domain( [minDegree, maxDegree] ).range([minRadius,maxRadius]);
                         
                         node.append("circle")
                           .attr("r", function(d) { 
-                              return scale(d.pagerank | 5);
+                              return scale(d.pagerank);
                           })
                           .attr("fill", function(d) { return color(d.group); });
                         

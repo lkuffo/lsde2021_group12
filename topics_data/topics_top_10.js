@@ -9,6 +9,10 @@ let raw_data = [
           "USMC-DevilDog",
           "a"
        ],
+       "news": [
+         'https://www.washingtonpost.com/news/the-fix/wp/2017/05/20/the-seth-rich-conspiracy-shows-how-fake-news-still-works/',
+         'https://www.wired.com/2017/05/seth-rich-filter-bubble/'
+       ],
        "number_of_messages":3339,
        "likes_total":26563,
        "average_likes":7.955375861036239,
@@ -125,6 +129,11 @@ let raw_data = [
           "Slav",
           "a",
           "Don"
+       ],
+       "news": [
+         "https://www.nytimes.com/2017/05/22/world/europe/ariana-grande-manchester-police.html",
+         "https://en.wikipedia.org/wiki/Manchester_Arena_bombing",
+         "https://www.bbc.com/news/uk-40012738"
        ],
        "number_of_messages":1456,
        "likes_total":15565,
@@ -243,6 +252,9 @@ let raw_data = [
           "CAline",
           "5Strat"
        ],
+       "news": [
+          'https://edition.cnn.com/2017/06/15/europe/london-fire-grenfell-tower/index.html'
+         ],
        "number_of_messages":989,
        "likes_total":9038,
        "average_likes":9.138523761375126,
@@ -1062,6 +1074,11 @@ let raw_data = [
           "TukkRivers",
           "GuardAmerican"
        ],
+       "news": [
+         "https://www.bbc.com/news/topics/cwernlw0el1t/london-bridge-attack",
+         "https://en.wikipedia.org/wiki/2017_London_Bridge_attack",
+         "https://news.sky.com/topic/london-bridge-attack-6682"
+       ],
        "number_of_messages":4382,
        "likes_total":46989,
        "average_likes":10.723185759926974,
@@ -1179,6 +1196,7 @@ let raw_data = [
           "HighPriestess",
           "TukkRivers"
        ],
+       "news": ['https://www.unclesamsmisguidedchildren.com/us-aircraft-assist-philippines-against-isis-takeover/screenshot-2017-06-12-12-59-13/'],
        "number_of_messages":3599,
        "likes_total":25347,
        "average_likes":7.0427896637954985,
@@ -1296,6 +1314,7 @@ let raw_data = [
           "StarPrincess",
           "TukkRivers"
        ],
+       "news": ['https://www.washingtonpost.com/local/public-safety/multiple-people-injured-after-shooting-in-alexandria/2017/06/14/0289c768-50f6-11e7-be25-3a519335381c_story.html'],
        "number_of_messages":1528,
        "likes_total":14732,
        "average_likes":9.641361256544503,
@@ -2115,6 +2134,7 @@ let raw_data = [
           "shorty",
           "mattforney"
        ],
+       "news": ['https://www.liverpoolecho.co.uk/news/liverpool-news/muslim-gang-rampaged-through-liverpool-13392480'],
        "number_of_messages":6824,
        "likes_total":35192,
        "average_likes":5.157092614302462,
@@ -2232,6 +2252,10 @@ let raw_data = [
           "a",
           "Meowwow"
        ],
+       "news": [
+         "https://www.independent.co.uk/news/world/americas/us-politics/cnn-blackmail-reddit-hansassholesolo-trump-wrestling-meme-statement-accusations-claims-a7825856.html",
+          'https://www.nytimes.com/2017/07/05/business/media/cnn-trump-tweet.html'
+      ],
        "number_of_messages":2571,
        "likes_total":30323,
        "average_likes":11.794243485025282,
@@ -3168,6 +3192,10 @@ let raw_data = [
           "tacsgc",
           "ArgentinoAmericano"
        ],
+       "news": [
+         "https://www.weather.gov/crp/hurricane_harvey",
+         "https://en.wikipedia.org/wiki/Hurricane_Harvey"
+       ],
        "number_of_messages":5047,
        "likes_total":42749,
        "average_likes":8.47018030513176,
@@ -3285,6 +3313,7 @@ let raw_data = [
           "shadowmud",
           "RDFloyd"
        ],
+       "news": ['https://edition.cnn.com/2017/08/12/us/charlottesville-white-nationalists-rally/index.html'],
        "number_of_messages":2873,
        "likes_total":23242,
        "average_likes":8.089801601113818,
@@ -4221,6 +4250,7 @@ let raw_data = [
           "DemonTwoSix",
           "Skipjacks"
        ],
+       "news": ['https://www.dhs.gov/news/2017/09/05/memorandum-rescission-daca'],
        "number_of_messages":3333,
        "likes_total":23786,
        "average_likes":7.136513651365137,
@@ -4338,6 +4368,7 @@ let raw_data = [
           "edenswarhammer",
           "reactionaryMonster"
        ],
+       "news": ['https://blog.apnic.net/2021/09/17/opinion-regulating-big-tech/'],
        "number_of_messages":2235,
        "likes_total":15095,
        "average_likes":6.7539149888143175,
@@ -4455,6 +4486,7 @@ let raw_data = [
           "Skipjacks",
           "PepeFarmRemembers"
        ],
+       "news": ['https://www.mediamatters.org/tucker-carlson/tucker-carlson-defends-gab-social-media-app-dubbed-haven-white-nationalists'],
        "number_of_messages":878,
        "likes_total":14673,
        "average_likes":16.711845102505695,
@@ -5274,6 +5306,12 @@ let raw_data = [
           "Mondragon",
           "Sperg"
        ],
+       "news": [
+         "https://en.wikipedia.org/wiki/2017_Las_Vegas_shooting",
+         "https://www.history.com/this-day-in-history/2017-las-vegas-shooting",
+         "https://www.nytimes.com/2017/10/02/us/politics/terrorism-las-vegas-attack.html",
+         "https://www.nbcnews.com/storyline/las-vegas-shooting/las-vegas-police-investigating-shooting-mandalay-bay-n806461"
+      ],
        "number_of_messages":7429,
        "likes_total":44531,
        "average_likes":5.994211872391977,
@@ -5391,6 +5429,12 @@ let raw_data = [
           "OurCountryFirst",
           "Teddi"
        ],
+       "news": [
+         "https://en.wikipedia.org/wiki/2017_Las_Vegas_shooting",
+         "https://www.history.com/this-day-in-history/2017-las-vegas-shooting",
+         "https://www.nytimes.com/2017/10/02/us/politics/terrorism-las-vegas-attack.html",
+         "https://www.nbcnews.com/storyline/las-vegas-shooting/las-vegas-police-investigating-shooting-mandalay-bay-n806461"
+      ],
        "number_of_messages":5153,
        "likes_total":27796,
        "average_likes":5.394139336308946,
@@ -5508,6 +5552,11 @@ let raw_data = [
           "rabite",
           "MadJewessWoman"
        ],
+       "news": [
+          'https://www.nytimes.com/2017/10/05/us/harvey-weinstein-harassment-allegations.html',
+          "https://www.theguardian.com/us-news/2017/oct/15/hillary-clinton-shock-over-harvey-weinstein-allegations",
+          "https://edition.cnn.com/2017/10/10/politics/harvey-weinstein-obama-clinton/index.html"
+      ],
        "number_of_messages":3011,
        "likes_total":22056,
        "average_likes":7.325141149119894,
@@ -6327,6 +6376,11 @@ let raw_data = [
           "DonPro",
           "wirelessguru1"
        ],
+       "news": [
+          'https://www.nytimes.com/2017/11/13/us/politics/roy-moore-alabama-senate.html',          
+         "https://www.nytimes.com/2017/11/13/us/politics/roy-moore-alabama-senate.html",
+         "https://www.theguardian.com/us-news/2017/nov/15/roy-moore-allegations-alabama-high-school-student"
+      ],
        "number_of_messages":5102,
        "likes_total":41023,
        "average_likes":8.040572324578596,
@@ -6444,6 +6498,12 @@ let raw_data = [
           "SurvivorMed",
           "GuardAmerican"
        ],
+       "news": [
+          'https://edition.cnn.com/2017/11/05/us/texas-church-shooting/index.html',
+          "https://en.wikipedia.org/wiki/Sutherland_Springs_church_shooting",
+          "https://www.nytimes.com/2017/11/05/us/church-shooting-texas.html",
+          "https://www.expressnews.com/news/local/article/Witnesses-recount-Sutherland-Springs-church-mass-16509333.php"
+      ],
        "number_of_messages":3638,
        "likes_total":25372,
        "average_likes":6.97416162726773,
@@ -6561,6 +6621,7 @@ let raw_data = [
           "PoliticsGhost",
           "Don"
        ],
+       "news": ['https://thediplomat.com/2017/11/the-policy-significance-of-trumps-asia-tour/'],
        "number_of_messages":1352,
        "likes_total":12213,
        "average_likes":9.033284023668639,
@@ -7380,6 +7441,10 @@ let raw_data = [
           "FreeAmericaNetwork",
           "DemonTwoSix"
        ],
+       "news": [
+          'https://taxfoundation.org/the-tax-cuts-and-jobs-act-simplified-the-tax-filing-process-for-millions-of-americans/',
+          "https://en.wikipedia.org/wiki/Tax_Cuts_and_Jobs_Act_of_2017"
+         ],
        "number_of_messages":2603,
        "likes_total":19697,
        "average_likes":7.567038033038801,
@@ -7497,6 +7562,9 @@ let raw_data = [
           "OurCountryFirst",
           "Skipjacks"
        ],
+       "news": [
+          'https://www.politico.com/story/2017/12/01/muellers-office-announces-flynn-will-plead-guilty-274349'
+         ],
        "number_of_messages":2378,
        "likes_total":16876,
        "average_likes":7.096719932716568,
@@ -7614,6 +7682,11 @@ let raw_data = [
           "BethDittmander",
           "PhilipSchuyler"
        ],
+       "news": [
+         "https://www.nytimes.com/elections/results/alabama-senate-special-election-roy-moore-doug-jones",
+         "https://en.wikipedia.org/wiki/2017_United_States_Senate_special_election_in_Alabama",
+         "https://www.nytimes.com/elections/results/alabama-senate-special-election-roy-moore-doug-jones"
+      ],
        "number_of_messages":2528,
        "likes_total":14662,
        "average_likes":5.799841772151899,
@@ -8433,6 +8506,10 @@ let raw_data = [
           "TukkRivers",
           "HocEstBellum"
        ],
+       "news": [
+          'https://www.factcheck.org/2018/01/the-facts-on-daca/',
+          "https://www.npr.org/2018/01/25/580858256/white-house-releases-draft-immigration-plan"
+      ],
        "number_of_messages":6003,
        "likes_total":40899,
        "average_likes":6.813093453273363,
@@ -8550,6 +8627,9 @@ let raw_data = [
           "a",
           "MartyGraw"
        ],
+       "news": [
+          'https://edition.cnn.com/2018/01/30/politics/trump-state-of-the-union-latest/index.html'
+         ],
        "number_of_messages":4603,
        "likes_total":33831,
        "average_likes":7.349771887899196,
@@ -8667,6 +8747,7 @@ let raw_data = [
           "bitb",
           "PryYour3rdEye"
        ],
+       "news": ['https://www.politico.com/story/2018/01/19/house-republicans-clash-release-the-memo-351132'],
        "number_of_messages":3872,
        "likes_total":30412,
        "average_likes":7.854338842975206,
@@ -9486,6 +9567,11 @@ let raw_data = [
           "Fibesboy",
           "andieiamwhoiam"
        ],
+       "news": [
+         "https://www.history.com/this-day-in-history/parkland-marjory-stoneman-douglas-school-shooting",
+         "https://en.wikipedia.org/wiki/Stoneman_Douglas_High_School_shooting",
+         'https://edition.cnn.com/2018/02/14/us/florida-high-school-shooting/index.html'
+       ],
        "number_of_messages":11730,
        "likes_total":68942,
        "average_likes":5.877408354646207,
@@ -9603,6 +9689,7 @@ let raw_data = [
           "SingingTimberwolf",
           "Vladomite"
        ],
+       "news": ['https://www.fedsmith.com/2018/02/02/fisa-memo-released/'],
        "number_of_messages":8907,
        "likes_total":66709,
        "average_likes":7.489502638374312,
@@ -9720,6 +9807,7 @@ let raw_data = [
           "CAFP",
           "Teddi"
        ],
+       "news": ['https://www.politico.com/story/2018/02/22/senate-gun-control-push-422540'],
        "number_of_messages":4976,
        "likes_total":29969,
        "average_likes":6.022709003215434,
@@ -10539,6 +10627,7 @@ let raw_data = [
           "Jdogg247",
           "DrPatReads"
        ],
+       "news": ['https://www.theatlantic.com/politics/archive/2018/03/guns-second-amendment-repeal/554540/'],
        "number_of_messages":4918,
        "likes_total":33612,
        "average_likes":6.834485563237088,
@@ -10656,6 +10745,11 @@ let raw_data = [
           "TeamWhitePride",
           "Cantwell"
        ],
+       "news": [
+         "https://www.washingtonpost.com/news/morning-mix/wp/2018/03/22/youtube-bans-more-firearms-videos-days-before-national-rally-for-gun-control/",
+         "https://www.reuters.com/article/us-alphabet-google-youtube-censorship-idUSKBN1H320D",
+         "https://www.sltrib.com/news/2018/03/23/as-youtube-bans-firearms-demonstrations-utah-firm-launching-its-own-pro-gun-video-platform/"
+      ],
        "number_of_messages":2662,
        "likes_total":17556,
        "average_likes":6.595041322314049,
@@ -10773,6 +10867,7 @@ let raw_data = [
           "PNN",
           "RebekahWorshamOfficial"
        ],
+       "news": ['https://www.cnbc.com/2018/03/26/ftc-confirms-facebook-data-breach-investigation.html'],
        "number_of_messages":2155,
        "likes_total":14207,
        "average_likes":6.592575406032482,
@@ -11592,6 +11687,7 @@ let raw_data = [
           "Flamenstein",
           "TrampDavis"
        ],
+       "news": ['https://www.aljazeera.com/news/2018/4/15/syria-strikes-all-the-latest-updates'],
        "number_of_messages":10122,
        "likes_total":53086,
        "average_likes":5.244615688599091,
@@ -11709,6 +11805,12 @@ let raw_data = [
           "HocEstBellum",
           "Jdogg247"
        ],
+       "news": [
+         "https://www.bbc.com/news/world-middle-east-43762251",
+         "https://www.bbc.com/news/world-middle-east-43686157"  ,
+         "https://apnews.com/74085b6b92c446678cfe704ee352c5ba/Timeline-of-chemical-weapons-attacks-in-Syria"     ,
+         'https://www.politico.com/story/2018/04/13/trump-syria-strikes-523051'
+      ],
        "number_of_messages":6214,
        "likes_total":29498,
        "average_likes":4.7470228516253625,
@@ -11819,6 +11921,7 @@ let raw_data = [
     {
        "created_at_month":"2018-04",
        "topic_title":"Central American Caravan",
+       "news": ['https://edition.cnn.com/2018/04/14/americas/central-america-migrant-caravan-train/index.html'],
        "users":[
           "RealTrumpTweets",
           "occdissent",
@@ -12638,6 +12741,7 @@ let raw_data = [
     {
        "created_at_month":"2018-05",
        "topic_title":"Migrant Caravan Crossing US Border",
+       "news": ['https://edition.cnn.com/2018/04/05/americas/caravan-mexico-migrants/index.html'],
        "users":[
           "PNN",
           "DecodingSatan",
@@ -12762,6 +12866,7 @@ let raw_data = [
           "Joe-Miller",
           "RDFloyd"
        ],
+       "news": ['https://www.washingtonpost.com/news/the-fix/wp/2018/05/02/robert-mueller-and-co-are-playing-hardball/'],
        "number_of_messages":535,
        "likes_total":3757,
        "average_likes":7.022429906542056,
@@ -12879,6 +12984,7 @@ let raw_data = [
           "DonPro",
           "AriShekelstein"
        ],
+       "news": ['https://edition.cnn.com/2021/10/26/tech/facebook-papers-language-hate-speech-international/index.html'],
        "number_of_messages":234,
        "likes_total":1829,
        "average_likes":7.816239316239316,
