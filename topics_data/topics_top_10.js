@@ -253,7 +253,8 @@ let raw_data = [
           "5Strat"
        ],
        "news": [
-          'https://edition.cnn.com/2017/06/15/europe/london-fire-grenfell-tower/index.html'
+          'https://www.nytimes.com/2017/05/09/us/politics/james-comey-fired-fbi.html',
+          'https://en.wikipedia.org/wiki/Dismissal_of_James_Comey'
          ],
        "number_of_messages":989,
        "likes_total":9038,
